@@ -1,12 +1,13 @@
 {
   "name": "@upstash/context7-mcp",
-  "version": "1.0.6",
+  "version": "1.0.0",
   "description": "MCP server for Context7",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && chmod 755 dist/index.js",
     "format": "prettier --write .",
-    "lint": "eslint \"**/*.{js,ts,tsx}\" --fix"
+    "lint": "eslint \"**/*.{js,ts,tsx}\" --fix",
+    "start": "MCP_TRANSPORT=http node dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -31,7 +32,7 @@
   },
   "homepage": "https://github.com/upstash/context7#readme",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.8.0",
+    "@modelcontextprotocol/sdk": "^1.12.0",
     "dotenv": "^16.5.0",
     "zod": "^3.24.2"
   },
